@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forest Fire Confidence Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <h1>Forest Fire Confidence Predictor</h1>
+  <form id="predict-form">
+    <label for="brightness">Brightness</label>
+    <input type="number" id="brightness" name="brightness" required step="any">
+
+    <label for="bright_t31">Brightness at 31°</label>
+    <input type="number" id="bright_t31" name="bright_t31" required step="any">
+
+    <label for="frp">Fire Radiative Power (FRP)</label>
+    <input type="number" id="frp" name="frp" required>
+
+    <label for="latitude">Latitude</label>
+    <input type="number" id="latitude" name="latitude" required step="any">
+
+    <label for="longitude">Longitude</label>
+    <input type="number" id="longitude" name="longitude" required step="any">
+
+    <button type="submit">Predict Confidence</button>
+  </form>
+  <div id="result"></div>
+
+  
+<div id="dialog-box" class="dialog">
+  <div class="dialog-content">
+    <span class="close-button" id="close-dialog">&times;</span>
+    <p id="dialog-message"></p>
+  </div>
+</div>
+
+
+ 
+  <script src="script.js"></script>
+</body>
+</html>
